@@ -24,30 +24,38 @@ limitations under the License.
 
 > Compute the [arcsine][arcsine] of a double-precision floating-point number.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-asin
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var asin = require( '@stdlib/math-base-special-asin' );
+asin = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asin@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var asin = require( 'path/to/vendor/umd/math-base-special-asin/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asin@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.asin;
+})();
+</script>
 ```
 
 #### asin( x )
@@ -79,9 +87,14 @@ var v = asin( -3.14 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var linspace = require( '@stdlib/array-base-linspace' );
-var asin = require( '@stdlib/math-base-special-asin' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asin@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var x = linspace( -1.0, 1.0, 100 );
 
@@ -89,6 +102,11 @@ var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( asin( x[ i ] ) );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -97,92 +115,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/math/base/special/asin.h"
-```
-
-#### stdlib_base_asin( x )
-
-Computes the [arcsine][arcsine] of a double-precision floating-point number (in radians).
-
-```c
-double out = stdlib_base_asin( 0.0 );
-// returns 0.0
-
-out = stdlib_base_asin( -3.141592653589793/6.0 );
-// returns ~-0.551
-```
-
-The function accepts the following arguments:
-
--   **x**: `[in] double` input value (in radians).
-
-```c
-double stdlib_base_asin( const double x );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-#include "stdlib/math/base/special/asin.h"
-#include <stdlib.h>
-#include <stdio.h>
-
-int main() {
-    double x[] = { -1.0, -0.78, -0.56, -0.33, -0.11, 0.11, 0.33, 0.56, 0.78, 1.0 };
-    double v;
-    int i;
-    
-    for ( i = 0; i < 10; i++ ) {
-        v = stdlib_base_asin( x[ i ] );
-        printf( "asin(%lf) = %lf\n", x[ i ], v );
-    }
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -266,11 +199,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/acos]: https://github.com/stdlib-js/math-base-special-acos
+[@stdlib/math/base/special/acos]: https://github.com/stdlib-js/math-base-special-acos/tree/umd
 
-[@stdlib/math/base/special/asinh]: https://github.com/stdlib-js/math-base-special-asinh
+[@stdlib/math/base/special/asinh]: https://github.com/stdlib-js/math-base-special-asinh/tree/umd
 
-[@stdlib/math/base/special/atan]: https://github.com/stdlib-js/math-base-special-atan
+[@stdlib/math/base/special/atan]: https://github.com/stdlib-js/math-base-special-atan/tree/umd
 
 <!-- </related-links> -->
 
