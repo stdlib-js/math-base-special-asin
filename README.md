@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import asin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asin@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-asin/tags). For example,
+
+```javascript
 import asin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asin@v0.2.0-esm/index.mjs';
 ```
 
@@ -81,7 +86,7 @@ var v = asin( -3.14 );
 <script type="module">
 
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-import asin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asin@v0.2.0-esm/index.mjs';
+import asin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asin@esm/index.mjs';
 
 var x = linspace( -1.0, 1.0, 100 );
 
