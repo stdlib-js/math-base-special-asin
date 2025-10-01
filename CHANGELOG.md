@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-07)
+## Unreleased (2025-10-01)
 
 <section class="reverts">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`f6204a4`](https://github.com/stdlib-js/stdlib/commit/f6204a4fc179ad7f12ecdfa6a472ae56d4f04b9d) - **test:** add tests to achieve full coverage in `acosf` and `asin` _(by Philipp Burckhardt)_
 -   [`5967ff0`](https://github.com/stdlib-js/stdlib/commit/5967ff0776bd0b67f1378625f87a7797bb9954c3) - **chore:** add structured package data for packages in `math/base/special` [(#8022)](https://github.com/stdlib-js/stdlib/pull/8022) _(by Gunj Joshi, Athan Reines)_
 -   [`fc438e0`](https://github.com/stdlib-js/stdlib/commit/fc438e0edbad0689d6923d6f3edb959b96597662) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`630ddb7`](https://github.com/stdlib-js/stdlib/commit/630ddb777824b5f6e501fda6dadf4ce41dccb964) - **test:** replace equal with strictEqual _(by Karan Anand)_
