@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-10-01)
+## Unreleased (2025-10-02)
 
 <section class="reverts">
 
 ### Reverts
 
+-   [`4a75f6d`](https://github.com/stdlib-js/stdlib/commit/4a75f6df054e6d718e40a37737938996ddd43006) - undo commits adding tests for full code coverage
 -   [`e5ce2d6`](https://github.com/stdlib-js/stdlib/commit/e5ce2d609f303ac075cee06bfc453cddea9d039c) - chore: update to modern benchmark Makefile
 
 </section>
@@ -22,6 +23,7 @@
 
 <details>
 
+-   [`4a75f6d`](https://github.com/stdlib-js/stdlib/commit/4a75f6df054e6d718e40a37737938996ddd43006) - **revert:** undo commits adding tests for full code coverage _(by Philipp Burckhardt)_
 -   [`f6204a4`](https://github.com/stdlib-js/stdlib/commit/f6204a4fc179ad7f12ecdfa6a472ae56d4f04b9d) - **test:** add tests to achieve full coverage in `acosf` and `asin` _(by Philipp Burckhardt)_
 -   [`5967ff0`](https://github.com/stdlib-js/stdlib/commit/5967ff0776bd0b67f1378625f87a7797bb9954c3) - **chore:** add structured package data for packages in `math/base/special` [(#8022)](https://github.com/stdlib-js/stdlib/pull/8022) _(by Gunj Joshi, Athan Reines)_
 -   [`fc438e0`](https://github.com/stdlib-js/stdlib/commit/fc438e0edbad0689d6923d6f3edb959b96597662) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
